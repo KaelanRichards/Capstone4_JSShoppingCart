@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Made with Thimble</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+    <h1>Shopping List</h1>
+  
+  <div>
+    <table>
+      <table cellpadding="4" cellspacing="4" border="1">
+        <tr>
+          <td valign="top">
+            <table cellpadding="4" cellspacing="4" border="0">
+              <thead>
+                <tr>
+                  <td colspan="2">
+                    Products for sale
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    Strawberry
+                  </td>
+                  <td>
+                    <input type="button" value="Add to cart" onclick="AddtoCart('Strawberry',50)"/>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    grape
+                  </td>
+                  <td>
+                    <input type="button" value="Add to cart" onclick="AddtoCart('blueberry',2)"/>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    pineapple
+                  </td>
+                  <td>
+                    <input type="button" value="Add to cart" onclick="AddtoCart('grape',3)"/>
+                  </td>
+                </tr>
+              </tbody>
+
+            </table>
+          </td>
+          <td valign="top">
+            <table cellpadding="4" cellspacing="4" border="1" id="orderedProductsTbl">
+              <thead>
+                <tr>
+                  <td>
+                    Name
+                  </td>
+                  
+                  <td>
+                    Price
+                  </td>
+                </tr>
+              </thead>
+              <tbody id="orderedProductsTblBody">
+
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="3" align="right" id="cart_total">
+
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+          </td>
+        </tr>
+      </table>
+    
+    </table>
+  </div>
+    <input type="button" value="Checkout" onclick="displayShoppingCart();">
+  
+  <script src="script.js"></script>
+  </body>
+</html>
